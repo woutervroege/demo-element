@@ -4,7 +4,7 @@
     "prepare": "snowpack --optimize"
   },
   "dependencies": {
-    "lit-element-light": "0.0.1"
+    "lit-element-light": "0.0.2"
   },
   "devDependencies": {
     "snowpack": "^1.1.0"
