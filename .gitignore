@@ -1,0 +1,4 @@
+node_modules
+web_modules
+*.pem
+.DS_Store

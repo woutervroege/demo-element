@@ -1,0 +1,17 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "snowpack --optimize"
+  },
+  "dependencies": {
+    "lit-element-light": "0.0.1"
+  },
+  "devDependencies": {
+    "snowpack": "^1.1.0"
+  },
+  "snowpack": {
+    "webDependencies": [
+      "lit-element-light/lit-element-light.js"
+    ]
+  }
+}

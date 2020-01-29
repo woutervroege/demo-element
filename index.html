@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.4.1/webcomponents-loader.js"></script>
+
+  <script type="module">
+    import { LitElementLight, html } from './web_modules/lit-element-light/lit-element-light.js';
+
+    class DemoElement extends LitElementLight {
+
+      get template() {
+        return html`
+          <style>
+            :host {
+              display: block;
+            }
+
+            h1 {
+              color: red;
+            }
+          </style>
+          <h1>Hello, Demo Element!</h1>
+        `
+      }
+
+    }
+
+    window.customElements.define('demo-element', DemoElement);
+  </script>
+
+  <demo-element></demo-element>
+
+</body>
+</html>
